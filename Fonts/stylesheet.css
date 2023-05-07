@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Basique Pro';
+    src: url('Basique.eot');
+    src: local('Basique Pro Black'), local('Basique'),
+        url('Basique.eot?#iefix') format('embedded-opentype'),
+        url('Basique.woff2') format('woff2'),
+        url('Basique.woff') format('woff'),
+        url('Basique.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basique Pro';
+    src: url('Basique_1.eot');
+    src: local('Basique Pro Bold'), local('Basique'),
+        url('Basique_1.eot?#iefix') format('embedded-opentype'),
+        url('Basique_1.woff2') format('woff2'),
+        url('Basique_1.woff') format('woff'),
+        url('Basique_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basique Pro';
+    src: url('Basique_2.eot');
+    src: local('Basique Pro'), local('Basique'),
+        url('Basique_2.eot?#iefix') format('embedded-opentype'),
+        url('Basique_2.woff2') format('woff2'),
+        url('Basique_2.woff') format('woff'),
+        url('Basique_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basique Pro';
+    src: url('Basique_3.eot');
+    src: local('Basique Pro Light'), local('Basique'),
+        url('Basique_3.eot?#iefix') format('embedded-opentype'),
+        url('Basique_3.woff2') format('woff2'),
+        url('Basique_3.woff') format('woff'),
+        url('Basique_3.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basique Pro';
+    src: url('Basique_4.eot');
+    src: local('Basique Pro Thin'), local('Basique'),
+        url('Basique_4.eot?#iefix') format('embedded-opentype'),
+        url('Basique_4.woff2') format('woff2'),
+        url('Basique_4.woff') format('woff'),
+        url('Basique_4.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+

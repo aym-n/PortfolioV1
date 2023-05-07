@@ -1,0 +1,321 @@
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --grey : #181823;
+    --primary : #537FE7;
+    --secondary: #C0EEF2;
+    --foreground: #ffffff;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    font-family: Mark Pro, sans-serif !important; 
+    overflow-x: hidden;
+    cursor: none;
+}
+
+#main{
+    background-color:hsla(15,0%,0%,1);
+background-image:
+radial-gradient(at 9% 87%, hsla(209,82%,64%,0.47) 0px, transparent 50%),
+radial-gradient(at 59% 0%, hsla(41,84%,67%,0.24) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(270,88%,70%,0.4) 0px, transparent 50%),
+radial-gradient(at 0% 36%, hsla(237,72%,65%,0.57) 0px, transparent 50%);
+}
+
+a{
+    text-decoration: none !important;
+    color: var(--foreground) !important;
+    cursor: none;
+}
+.loader{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--foreground);
+    position: absolute;
+    z-index: 8;
+}
+
+.loader p{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100vh;
+    margin: 0; 
+    font-family: Basique Pro, sans-serif;  
+    font-weight: 900;
+    font-size: 90px;
+    color: var(--grey);
+}
+
+#mask{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--foreground);
+}
+.content{
+    position: relative;
+    z-index: 1;
+    background-color: var(--grey);
+    color: var(--foreground);
+}
+#content h1{
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    justify-content: center;
+    align-items: center;
+}
+
+h1#name{
+    font-family: Basique Pro, sans-serif;  
+    font-weight: 900;
+    font-size: 90px;
+}
+.accent{
+    font-family: Basique Pro, sans-serif;
+}
+.bold{
+    font-weight: bold;
+}
+.glow{
+    text-shadow: 0px 0px 19px #7B7B7B;
+}
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.vertical-text p{
+    font-family: 'Basique Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    color: var(--secondary);
+}
+
+.marquee-1 {
+    animation: marquee 50s ease-in-out infinite;
+  }
+.marquee-2{
+    animation: marquee 60s linear infinite;
+}
+.marquee-3{
+    animation: marquee 40s ease-in-out infinite;
+}
+
+@keyframes marquee {
+    0% {
+      transform: translateY(-5%);
+    }
+    50% {
+      transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(-5%);
+    }
+  }
+.hero-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    opacity: 0;
+    background: url("pexels-imad-clicks-15961863\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    transition: linear 0.5s;
+}
+.kashmir{
+    opacity: 1;
+}
+
+#trailer{
+    border: 3px solid var(--secondary);
+    height: 2vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 5;
+    pointer-events: none;
+}
+#cursor{
+    background-color: var(--secondary);
+    height: 1vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    z-index: 5;
+    pointer-events: none;
+}
+.light{
+    background-color: var(--foreground);
+    color: var(--grey);
+}
+
+#projects-card{
+    aspect-ratio: 0.75;
+    box-shadow: 20px 20px var(--primary);
+    border: 0;
+    
+}
+#projects-card > img{
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+}
+#projects-card .card-body{
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+}
+
+.skew{
+    transform: skewY(-3deg);
+}
+.noskew{
+    transform: skewY(3deg);
+    transform-origin: 0;
+}
+
+#skills-card{
+    aspect-ratio: auto;
+    background: transparent;
+}
+#skills-card > img{
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+}
+#skills-card .card-body{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#divider{
+    background-image: radial-gradient(5141.97% 46.25% at 0% 55.09%, #4A4A64 0%, rgba(74, 74, 100, 0) 98.42%);
+    width: 2px;
+    height: 45vh;
+    display: block;
+    z-index: 2;
+    padding: 0;
+    opacity: 0.8;
+}
+.font-mark{
+    font-family: 'Mark Pro';
+    font-style: normal;
+    font-weight: 400;
+}
+
+#exp-card{
+    aspect-ratio: 0.65;
+    background: transparent;
+    border: none;
+}
+
+#hr-divider{
+    background-image: radial-gradient(50.79% 960208.76% at 50% 50.07%, #4A4A64 0%, rgba(74, 74, 100, 0.11) 96%) ;
+    width: 60vw;
+    height: 2px;
+    display: block;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0.8;
+}
+
+#me{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: 15px 15px var(--primary);
+}
+#arrow{
+    position: absolute;
+    right: 5%;
+    top: -5%;
+    animation: bounce infinite 3s ease-in-out;
+}
+
+@keyframes bounce {
+
+    0%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+    
+}
+#trailer:not([data-type=""]) > #trailer-icon {
+    opacity: 1;
+  }
+  
+#trailer-icon {
+    color: #C0EEF2;
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+.card-back{
+    background-color: var(--grey);
+    color: var(--foreground) !important;
+    opacity: 0;
+    height: 100%;
+    transition: ease-in-out 0.5s;
+}
+.card-back:hover{
+    opacity: 1;
+}
+.resume-button{
+    color: var(--primary);
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 3;
+    border-radius: 50px;
+    border: var(--primary) 3px solid;
+    animation: bounce infinite 3s ease-in-out;
+}
+.marquee-content {
+    display: flex;
+    animation: scrolling 20s linear infinite;
+  }
+  
+  .marquee-item {
+    flex: 0 0 16vw;
+    margin: 0 1vw;
+    overflow: hidden;
+    aspect-ratio: 1;
+  }
+  
+  .marquee-item img {
+    display: block;
+    width: 100%;
+  }
+  
+  @keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translatex(-144vw); }
+  }
+  
