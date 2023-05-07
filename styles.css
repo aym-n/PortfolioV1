@@ -1,3 +1,12 @@
+
+@font-face{
+    font-family: 'Basique Pro';
+    src: url('Fonts/Basique.woff'), url('Fonts/Basique.woff') format('woff');
+}
+@font-face{
+    font-family: 'Mark Pro';
+    src: url('Fonts/MarkPro-Book.woff'), url('Fonts/MarkPro-Book.woff') format('woff');
+}
 html{
     scroll-behavior: smooth;
 }
@@ -96,7 +105,7 @@ h1#name{
 .vertical-text p{
     font-family: 'Basique Pro';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 96px;
     color: var(--secondary);
 }
