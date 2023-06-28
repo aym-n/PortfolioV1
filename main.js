@@ -2,6 +2,7 @@ const letters = "abcdefghijklmnopqrstuvwxyz";
 const  dataText = "aymn.me"
 var LoaderText = document.querySelector("#loader-text");
 
+history.scrollRestoration = 'manual';
 
 const intervalPrev = setInterval(()=>{
 

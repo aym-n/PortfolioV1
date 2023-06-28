@@ -285,6 +285,7 @@ h1#name{
     color: #C0EEF2;
     opacity: 0;
     transition: opacity 400ms ease;
+    font-size: 0.7rem;
 }
 .card-back{
     background-color: var(--grey);
