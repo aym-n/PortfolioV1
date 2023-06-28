@@ -287,16 +287,6 @@ h1#name{
     transition: opacity 400ms ease;
     font-size: 0.7rem;
 }
-.card-back{
-    background-color: var(--grey);
-    color: var(--foreground) !important;
-    opacity: 0;
-    height: 100%;
-    transition: ease-in-out 0.5s;
-}
-.card-back:hover{
-    opacity: 1;
-}
 .resume-button{
     color: var(--primary);
     position: fixed;
@@ -327,5 +317,101 @@ h1#name{
   @keyframes scrolling {
     0% { transform: translateX(0); }
     100% { transform: translatex(-144vw); }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .vertical-text {
+        writing-mode: horizontal-tb;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .marquee-1 {
+        animation: marquee 50s ease-in-out infinite;
+      }
+    .marquee-2{
+        animation: marquee 60s linear infinite;
+    }
+    .marquee-3{
+        animation: marquee 40s ease-in-out infinite;
+    }
+    
+    @keyframes marquee {
+        0% {
+          transform: translateX(5%);
+        }
+        50% {
+          transform: translateX(50%);
+        }
+        100%{
+            transform: translateX(5%);
+        }
+      }
+    .container {
+        flex-direction: column;
+    }
+    .col.interactable {
+        width: 100%;
+        margin: 5% 0;
+    }
+    .marquee-item {
+        flex: 0 0 33vw;
+    }
+    @keyframes scrolling {
+        0% { transform: translateX(0); }
+        100% { transform: translatex(-297vw); }
+      }
+
+      .container.col-xxl-12 {
+        flex-direction: column;
+    }
+    .col-proj {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    #divider {
+        display: none;
+    }
+    .row.col-xxl-12 {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .col-exp {
+        width: 100%;
+        padding-bottom: 20px;
+        border-bottom: #3d3d4d 1px solid;
+      }
+      
+      #hr-divider {
+        display: none;
+      }
+      #exp-card{
+        aspect-ratio: 1;
+        background: transparent;
+        border: none;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact{
+        display: none;
+    }
+    .email{
+        margin-top: 30px;
+        margin-bottom: 2%;
+    }
+    #skills .container.col-xxl-12.d-flex.justify-content-center.align-items-center.noskew {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      
+      #skills .col-skills {
+        margin-top: 20px;
+      }
   }
   
