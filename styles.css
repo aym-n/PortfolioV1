@@ -327,6 +327,7 @@ h1#name{
         align-items: center;
         white-space: nowrap;
         overflow: hidden;
+        display: none;
     }
     .marquee-1 {
         animation: marquee 50s ease-in-out infinite;
@@ -413,5 +414,20 @@ h1#name{
       #skills .col-skills {
         margin-top: 20px;
       }
+
+      #loader-text{
+        font-size: 60px;
+      }
   }
-  
+
+  @media (hover: none) {
+    #cursor{
+        display: none;
+    }
+    #trailer{
+        opacity: 0;
+    }
+    #trailer i{
+        display: none;
+    }
+  }
