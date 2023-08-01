@@ -1,3 +1,7 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 @font-face{
     font-family: 'Basique Pro';
@@ -13,16 +17,14 @@ html{
 :root{
     --grey : #181823;
     --primary : #537FE7;
-    --secondary: #C0EEF2;
+    --secondary: #5fb6fd;
     --foreground: #ffffff;
 }
 body{
-    height: 100vh;
     width: 100vw;
     padding: 0px;
     margin: 0px;
     font-family: Mark Pro, sans-serif !important; 
-    overflow-x: hidden;
     cursor: none;
 }
 
@@ -182,17 +184,21 @@ h1#name{
     aspect-ratio: 0.75;
     box-shadow: 20px 20px var(--primary);
     border: 0;
-    
+    overflow: hidden;
 }
 #projects-card > img{
     position: absolute;
     height: 100%;
+    width: auto;
+    margin-right: 50%;
     z-index: 0;
 }
 #projects-card .card-body{
     z-index: 2;
     position: absolute;
     bottom: 0;
+    color: #ffffff;
+    background: linear-gradient(0deg, #1f1f1f,75%, transparent);
 }
 
 .skew{
@@ -282,13 +288,12 @@ h1#name{
   }
   
 #trailer-icon {
-    color: #C0EEF2;
+    color: var(--secondary);
     opacity: 0;
     transition: opacity 400ms ease;
     font-size: 0.7rem;
 }
 .resume-button{
-    color: var(--primary);
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -296,6 +301,12 @@ h1#name{
     border-radius: 50px;
     border: var(--primary) 3px solid;
     animation: bounce infinite 3s ease-in-out;
+}
+.resume-button a *{
+    color: var(--primary);
+}
+.marquee{
+    overflow-x: hidden;
 }
 .marquee-content {
     display: flex;
@@ -391,7 +402,7 @@ h1#name{
         display: none;
       }
       #exp-card{
-        aspect-ratio: 1;
+        aspect-ratio: 1.5;
         background: transparent;
         border: none;
     }
@@ -417,6 +428,10 @@ h1#name{
 
       #loader-text{
         font-size: 60px;
+      }
+
+      .card-title{
+        font-size: 5rem !important;
       }
   }
 
