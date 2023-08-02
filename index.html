@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PX4FFYEB8E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PX4FFYEB8E');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -283,17 +292,14 @@
         </div>
       </div>
     </div>
-  <div class="row py-5 my-5">
-    <div id="hr-divider"></div>
-  </div>
-  <div class="container" id="about" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"   data-aos-mirror="true"  data-aos-once="true">
+  <div class="container py-3" id="about" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"   data-aos-mirror="true"  data-aos-once="true">
     <h2 class="card-title accent fw-bold display-2" >about me.</h2>
     <h2 class="card-title accent fs-4 fw-light font-mark">me, myself, and why you should hire me</h2>
   </div>
-  <div class="content light my-5" >
+  <div class="content light" >
     <div class="container col-xxl-12 px-5  d-flex justify-content-center align-items-center">
       <div class="row">
-        <div class="col-md-4 position-relative p-5" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out"   data-aos-mirror="true"  data-aos-once="true">
+        <div class="col-md-4 position-relative p-5 my-5 interactable" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out"   data-aos-mirror="true"  data-aos-once="true" data-type="me">
           <img src="me.png" id="me">
           <img src="arrow.png" id="arrow">
         </div>
@@ -316,8 +322,8 @@
         </div> 
         <div class="row">
           <div class="col-md-4"><h2 class="card-title accent fs-5 fw-light font-mark">hit me up - <span class="text-muted">before i get famous</span></h2></div>
-          <div class="col-md-4"><a href="mailto:ayman_2022bcse004@nitsri.ac.in"><h2 class="card-title accent fs-3 fw-light font-mark interactable email" data-type="email"><i class="fa fa-envelope m-2"></i>ayman_2022bcse004 @nitsri.ac.in</h2></a></div>
-          <div class="col-md-4"><a href="tel:+917006456359"><h2 class="card-title accent fs-3 fw-light font-mark interactable" data-type="phone"><i class="fa fa-phone m-2"></i>(+91) 7006 456 359</h2></a></div>
+          <div class="col-md-4"><a href="mailto:ayman_2022bcse004@nitsri.ac.in"><h2 class="card-title accent fs-5 fw-light font-mark interactable email" data-type="email"><i class="fa fa-envelope m-2"></i>ayman_2022bcse004 @nitsri.ac.in</h2></a></div>
+          <div class="col-md-4" id="phone-number"><a href="tel:+917006456359"><h2 class="card-title accent fs-5 fw-light font-mark interactable" data-type="phone"><i class="fa fa-phone m-2"></i>(+91)&nbsp;7006&nbsp;456&nbsp;359</h2></a></div>
         </div>     
       </div>
     </div>

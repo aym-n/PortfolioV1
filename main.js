@@ -124,6 +124,8 @@ const getTrailerClass = type => {
       return "fa-sharp fa-solid fa-paper-plane";
     case "phone":
       return "fa-sharp fa-solid fa-phone";
+    case "me":
+      return "fa-solid fa-ghost";
   }
 }
 

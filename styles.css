@@ -17,7 +17,7 @@ html{
 :root{
     --grey : #181823;
     --primary : #537FE7;
-    --secondary: #5fb6fd;
+    --secondary: #95cdfa;
     --foreground: #ffffff;
 }
 body{
@@ -208,7 +208,9 @@ h1#name{
     transform: skewY(3deg);
     transform-origin: 0;
 }
-
+#skills{
+    box-shadow: 0px -25px 0px 0px var(--primary);
+}
 #skills-card{
     aspect-ratio: auto;
     background: transparent;
@@ -432,6 +434,9 @@ h1#name{
 
       .exp-title{
         font-size: 4rem !important;
+      }
+      #phone-number{
+        margin-top: 1.5rem!important;
       }
   }
 
